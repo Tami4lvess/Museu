@@ -63,15 +63,16 @@ a{
 
 .card
 {
-    background-color: #5ccbe2;
+    background-color: pink;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 0 5px 15px rgba(254, 0, 131, 0.9);
     transition: 0.3s ease;
 }
 
 .cards
 {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -93,7 +94,7 @@ a{
 
 .cards h3
 {
-    color: #00a8d2;
+    color: #d200af;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -101,11 +102,14 @@ a{
 
 .card p
 {
-    color: #000a54;
+    color: #ffffff;
     font-size: 1.2rem;
     line-height: 1.4;
     font-weight: 600;
 }
 
-
+*::selection
+{
+    color: #ff0ed3;
+}
 

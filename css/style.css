@@ -1,0 +1,388 @@
+img{
+    height: 130px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    height: 900px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    line-height:1.6;
+    background-color: #7fc9b2d8;
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header{
+    background:radial-gradient(circle,#30b8a1,pink);
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    text-align: center;
+    border-bottom: 5px solid rgba(80, 172, 19, 0.457);
+}
+
+ header h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+ }
+
+header .slogan{
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-style: italic;
+
+}
+
+nav{
+    background-color:#8bccd1;
+    box-shadow: 0 2px 10px rgba(3, 174, 54, 0.313);
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu a{
+    color:rgb(22, 108, 85);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover{
+    color: #ea0b91;
+}
+
+.menu{
+    display: flex;
+    justify-content: center ;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.banner{
+    color: rgb(24, 4, 71);
+    background-color: pink;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    animation: pulse 1.5s ease-in-out;
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+  }
+
+  .banner p{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .botao{
+        display: inline-block;
+        background-color: rgb(107, 232, 205);
+        color: white;
+        padding: 12px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 1.1rem;
+        box-shadow: 0 4px rgba(2, 148, 138, 0.457);
+        transition: background-color 0.3s, transform 0.2;
+  }
+
+  .botao:hover{
+    background-color: rgb(108, 203, 224);
+    transform: translateY(-2px);
+    box-shadow: 0 4px rgb(38, 160, 156);
+  }
+
+  .sobre h2{
+    color: rgb(6, 81, 41);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .sobre h2::after{
+        content: '';
+        display:  block;
+        width: 90px;
+        height: 3px;
+        background-color: #4cc072;
+        margin: 10px auto 0;
+        border-radius: 2px;
+  }
+
+  .sobre p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #000906;
+  }
+
+  .exposicoes{
+    padding: 60px;
+    background-color: rgb(111, 213, 229);
+  }
+
+  .exposicoes h2{
+    text-align: center;
+    color: #266e62;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .exposicoes h2::after{
+    content: '';
+    display:  block;
+    width: 90px;
+    height: 3px;
+    background-color: #0a95c3;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  .card{
+    background-color: #ea0b91;
+    
+  }
+
+
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+* ::selection{
+    color: rgb(235, 70, 185);
+}
+
+
+.card
+{
+    background-color: pink;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+    transition: 0.3s ease;
+}
+
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.card a
+{
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+.cards h3
+{
+    color: #ff00c3;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+/* enviar tudo a partir do .card */
+
+.card p
+{
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+
+.containerverao{
+  background-color: #89d7e7;
+  font-family: pacific;
+  text-align: center;
+  font-size: 1rem;
+  color: #ce184c;
+  
+}
+
+.cabeca{
+  background-color: #f0dd74;
+  padding: 30px;
+  font-family: pacific;
+}
+img{
+  height: 250px;
+  
+  
+}
+.corpinho{
+  background-color: #f981a1;
+  font-family: pacific;
+  display: flex;
+ 
+  
+}
+
+.cabeca h2{
+  text-align: center;
+    color: #a47b00;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    
+}
+.corpinho h2{
+  text-align: center;
+    color: #ce184c;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    
+}
+.corpinho p{
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+
+.corpinho h2{
+  position: relative;
+  left: 90px;
+ 
+}
+
+.containerprima{
+  background-color: #4dc8e0;
+  font-family: pacific;
+  text-align: center;
+  font-size: 1rem;
+  color: #ce184c;
+    }
+
+  .cabecao{
+    background-color: #eda4d1;
+    padding: 30px;
+   font-family: pacific;
+  }
+
+  .corpinhu{
+    background-color: #f8628d;
+    padding: 30px;
+   font-family: pacific;
+  }
+   
+  .corpinhu h2{
+    text-align: center;
+    color: #70061d;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    
+  }
+
+  .cabecao h2{
+    text-align: center;
+    color: #c22891;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+
+  .containerouto{
+    background-color: #4dc8e0;
+  font-family: pacific;
+  text-align: center;
+  font-size: 1rem;
+  color: #ce184c;
+  }
+
+    .cabec{
+      background-color: #6fa0e9;
+    padding: 30px;
+   font-family: pacific;
+    }
+
+    .cabec h2{
+      text-align: center;
+    color: #4439ad;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    }
+
+  .corpinhr{
+    background-color: #e7afd6;
+  font-family: pacific;
+  display: flex;
+  }
+
+  .corpinhr p{
+    position: relative;
+    top: 50px;
+    right: 50px;
+  }
+  .corpinhr h2{
+    position: relative;
+    left: 90px;
+    color: #fd608a;
+   
+  }
+
+  .containerinver{
+    background-color: #4dc8e0;
+    font-family: pacific;
+    text-align: center;
+    font-size: 1rem;
+    color: #ce184c;
+  }
+
+  .cade{
+    background-color: #e7afd6;
+    font-family: pacific;
+    display: flex;
+  }
+
+  
+  .corpin{
+    background-color: #6fa0e9;
+    padding: 30px;
+    font-family: pacific;
+  }
+  
+  .corpin h2{
+    color: #1e0b97;
+    text-align: center;
+  }
+
+  .corpin p{
+   margin-bottom: 20px; 
+  }
+  
+
